@@ -41,7 +41,10 @@ const submitBtn = document.querySelector(".form-submit")
 
 // trending card
 
-
+window.addEventListener("scroll", function(){
+  let head = document.querySelector(".nav-div")
+  head.classList.toggle("sticky", window.scrollY > 200)
+})
 
 
 

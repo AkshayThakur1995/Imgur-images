@@ -22,6 +22,19 @@ body {
   gap: 16px;
   padding: 0 10px 0 10px;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 1s ease-in-out;
+  padding: 16px 0 5px 0;
+  z-index: 10000000000;
+  background-image: url(https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png);
+}
 .post-btn {
   text-align: center;
   height: 35px;
@@ -168,7 +181,7 @@ body {
 .trending-tag-card {
   display: flex;
   flex-direction: column;
-  width: 135px;
+  width: 152px;
   border: 1px solid black;
   border-radius: 10px;
   transition: ease-in-out 0.2s;
@@ -227,7 +240,7 @@ body {
 }
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 240px);
+  grid-template-columns: repeat(auto-fill, 260px);
   gap: 10px;
   grid-auto-rows: min-content;
 }
@@ -238,7 +251,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  max-width: 240px;
+  max-width: 260px;
   max-height: 427px;
   text-align: center;
   background-color: #86888d;
@@ -246,7 +259,7 @@ body {
 }
 .grid-card img {
   max-height: 350px;
-  max-width: 240px;
+  max-width: 260px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
